@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Play!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app">
+        <h1 class="title">
+            <span>SPIN</span>
+            <span>AND</span>
+            <span>WIN</span>
+        </h1>
+
+        <div class="wheel-container">
+            <div class="pointer" id="pointer"></div>
+            <div class="wheel" id="wheel">
+                </div>
+            <button class="spin-button" id="spin-btn">SPIN</button>
+        </div>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2 class="modal-title">Selamat!</h2>
+            <p>Anda mendapatkan:</p>
+            <h1 id="prize-result" class="prize-result"></h1>
+            <button id="play-again-btn">Putar Lagi</button>
+        </div>
+    </div>
+    
+    <audio id="tick-sound" src="sounds/tick.mp3" preload="auto"></audio>
+    <audio id="win-sound" src="sounds/win.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
